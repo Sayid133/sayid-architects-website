@@ -3,6 +3,10 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+
+.text-light-gray{
+    color: #727272;
+}
 .parymary-button{
     width: 180px;
     height: 64px;
@@ -64,29 +68,11 @@ nav li a{
     margin-top: 20px;
     width: 100%;
 }
- @media screen and (max-width: 576px) {
-    header{
-        background-color: rgb(231, 216, 196);
-        padding: 20px;
-    }
-    nav {
-        flex-direction: column;
-    }
- }
 
- @media screen and (min-width:576px) and (max-width: 960px) {
-    header{
-        background-color: rgb(128, 211, 193);
-        padding: 20px;
-    }
-    nav {
-        flex-direction: column;
-    }
-}
 /*mail Styles*/
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 .teams-container{
     display: flex;
@@ -122,3 +108,33 @@ main{
     font-weight: 700;
 }
 
+
+
+
+@media screen and (max-width: 576px) {
+    header{
+        background-color: rgb(231, 216, 196);
+        padding: 20px;
+    }
+    nav, .teams-container {
+        flex-direction: column;
+        
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .team-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+ }
+
+ @media screen and (min-width:576px) and (max-width: 960px) {
+    header{
+        background-color: rgb(128, 211, 193);
+        padding: 20px;
+    }
+    nav, .teams-img-container {
+        flex-direction: column;
+    }
+}
